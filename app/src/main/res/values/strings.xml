@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Emircan</string>
+
+    <!--exceptions-->
+    <string name="exception_service_null_response">İçerik Bulunamadı</string>
+    <string name="exception_service_generic_error_message">İşleminiz Gerçekleştirilemedi</string>
+    <string name="exception_service_fail_response_with_status">İşleminiz Gerçekleştirilemedi. Hata Kodu : %1$d</string>
+    <string name="exception_title_generic_error">Hata</string>
+    <string name="exception_title_service_error">Servis Hatası</string>
+
+    <!--permissions-->
+    <string name="permission_error_write_external">WRITE_EXTERNAL_STORAGE izni verilmeli</string>
+
+    <!--toast-->
+    <string name="success_save_image">Fotoğraf Kaydedildi</string>
+    <string name="error_no_photo_selected">Fotoğraf Seçilmeli</string>
+
+    <!--Common-->
+    <string name="common_label_none">None</string>
+</resources>

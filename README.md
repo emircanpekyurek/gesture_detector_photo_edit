@@ -1,0 +1,8 @@
+- Clean Architecture
+    - LocaleDataSource
+    - RemoteDataSource
+    - UseCase
+- Room
+- Unit Test
+- CustomView
+    - GestureDetector (Scale & Move)

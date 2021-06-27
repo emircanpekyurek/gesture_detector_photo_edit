@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="overlay"
+            type="com.pekyurek.emircan.presentation.core.data.model.response.candidate.overlay.Overlay" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/container_overlay_image_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/overlay_item_margin"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivOverlay"
+            loadImageFromUrl="@{overlay.overlayPreviewIconUrl}"
+            android:layout_width="@dimen/overlay_image_width"
+            android:layout_height="@dimen/overlay_image_height"
+            android:padding="2dp"
+            app:shapeAppearance="@style/RoundedImageView"
+            app:strokeColor="@color/purple_700"
+            tools:srcCompat="@drawable/portrait_poster" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@{overlay.overlayName}"
+            tools:text="FX-1" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
